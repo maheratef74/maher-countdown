@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>العد التنازلي لنهاية الخدمة — ماهر عاطف ماهر</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Hero -->
+  <header class="card hero">
+    <div class="photo"><span class="avatar">🪖</span><img src="assets/maher.jpg" alt="ماهر عاطف ماهر"></div>
+    <p class="rank">جندي مقاتل</p>
+    <h1 class="name">ماهر عاطف ماهر</h1>
+    <h2>العد التنازلي لنهاية الخدمة</h2>
+    <p class="dd">تاريخ بداية الخدمة: <b id="startLabel">01 / 06 / 2026</b></p>
+    <p class="dd">تاريخ إنهاء الخدمة: <b id="dischargeLabel">01 / 06 / 2027</b></p>
+    <div id="countdown" class="cd" aria-live="off">
+      <div><b id="cdD">0</b><span>يوم</span></div><div><b id="cdH">0</b><span>ساعة</span></div>
+      <div><b id="cdM">0</b><span>دقيقة</span></div><div><b id="cdS">0</b><span>ثانية</span></div>
+    </div>
+    <div id="done" class="done" hidden>تمت المهمة.. الحمد لله 🇪🇬</div>
+    <div class="btns">
+      <button id="btnToday">📍 أنا فين النهاردة؟</button>
+      <button id="btnShare">📤 مشاركة</button>
+    </div>
+  </header>
+
+  <section class="card" id="progress"><h3>تقدّم الخدمة</h3>
+    <div class="bar"><i id="barFill"></i></div>
+    <div class="grid3" id="progressInfo"></div>
+  </section>
+
+  <section class="card status" id="status"></section>
+  <section class="card next" id="next"></section>
+  <section class="card" id="remaining"></section>
+  <section class="card"><h3>المحطات الجاية</h3><ul class="events" id="upcoming"></ul></section>
+  <section class="card"><h3>إحصائيات</h3><div class="grid3" id="stats"></div></section>
+
+  <section class="card"><h3>الجدول الزمني للدورات
+    <button class="small" id="btnToggle">طي / فتح التفاصيل</button></h3>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <section class="card" id="calCard"><h3>التقويم</h3>
+    <div class="calnav"><button id="prevM">›</button><b id="calTitle"></b><button id="nextM">‹</button></div>
+    <div class="cal" id="calendar"></div>
+    <div class="legend">
+      <span><i class="k service"></i>🪖 خدمة</span><span><i class="k leave"></i>🏠 إجازة</span>
+      <span><i class="k depart"></i>⭐ نزول</span><span><i class="k discharge"></i>🎖️ إنهاء الخدمة</span>
+    </div>
+    <div class="detail" id="detail">اضغط على أي يوم لعرض التفاصيل</div>
+  </section>
+
+  <section class="card quote"><p id="quote"></p><small>جندي مقاتل / ماهر عاطف ماهر</small></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
